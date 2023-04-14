@@ -203,7 +203,7 @@ export const Chat: FC<Props> = memo(
               ref={chatContainerRef}
               onScroll={handleScroll}
             >
-              {conversation.messages.length === 0 ? (
+              {conversation.messages.length < 0 ? (
                 <>
                   <div className="mx-auto flex w-[350px] flex-col space-y-10 pt-12 sm:w-[600px]">
                     <div className="text-center text-3xl font-semibold text-gray-800 dark:text-gray-100">
